@@ -51,8 +51,7 @@ function startCountdown() {
 
 function generateNewNumber() {
     clearInterval(countdownInterval);
-    displayRandomNumber();
-    startCountdown();
+    window.location.reload(); // Reload the page
 }
 
 // Display random number on page load
