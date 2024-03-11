@@ -1,10 +1,41 @@
 body {
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #36393f;
+    color: #ffffff;
 }
 
-.cool-button {
-    background-color: #3498db;
-    color: white;
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #202225;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    background-color: #7289da;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+.random-number, .countdown {
+    margin-bottom: 20px;
+}
+
+.generate-button {
+    background-color: #7289da;
+    color: #ffffff;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -13,6 +44,6 @@ body {
     transition: background-color 0.3s;
 }
 
-.cool-button:hover {
-    background-color: #2980b9;
+.generate-button:hover {
+    background-color: #677bc4;
 }
