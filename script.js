@@ -3,7 +3,7 @@ function generateRandomNumber() {
 }
 
 function sendToDiscord(randomNumber) {
-    const webhookURL = 'YOUR_DISCORD_WEBHOOK_URL';
+    const webhookURL = 'https://discord.com/api/webhooks/1216854549579694180/tDEnQF-tW3PXYnOQCyVW84RtGMt4C5Zmd2ZtazCIhba1psWUP8D-OAcvVIdAhBYrEklf';
     const data = {
         content: 'Random Number: ' + randomNumber
     };
