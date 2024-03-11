@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Random Number Generator</h1>
-    <p id="randomNumber"></p>
-    <p id="countdown"></p>
-    <button onclick="generateNewNumber()" class="cool-button">Generate New Number</button>
-
+    <div class="container">
+        <div class="header">
+            <h1>Random Number Generator</h1>
+        </div>
+        <div class="content">
+            <div class="random-number">
+                <p id="randomNumber">Random Number: -</p>
+            </div>
+            <div class="countdown">
+                <p id="countdown">Time until next number: 60 seconds</p>
+            </div>
+            <button onclick="generateNewNumber()" class="generate-button">Generate New Number</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
