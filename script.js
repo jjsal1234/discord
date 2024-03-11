@@ -1,3 +1,5 @@
+let countdownInterval;
+
 function generateRandomNumber() {
     return Math.floor(Math.random() * 100); // Generates a random number between 0 and 99
 }
@@ -30,11 +32,29 @@ function sendToDiscord(randomNumber) {
 function displayRandomNumber() {
     var randomNumber = generateRandomNumber();
     console.log('Random Number:', randomNumber);
+    document.getElementById("randomNumber").textContent = "Random Number: " + randomNumber;
     sendToDiscord(randomNumber);
+}
+
+function startCountdown() {
+    let secondsLeft = 60;
+    countdownInterval = setInterval(function() {
+        document.getElementById("countdown").textContent = "Time until next number: " + secondsLeft + " seconds";
+        secondsLeft--;
+        if (secondsLeft < 0) {
+            clearInterval(countdownInterval);
+            displayRandomNumber();
+            startCountdown();
+        }
+    }, 1000);
+}
+
+function generateNewNumber() {
+    clearInterval(countdownInterval);
+    displayRandomNumber();
+    startCountdown();
 }
 
 // Display random number on page load
 displayRandomNumber();
-
-// Generate and send a new random number to Discord every minute
-setInterval(displayRandomNumber, 60000);
+startCountdown();
