@@ -3,7 +3,7 @@ function generateRandomNumber() {
 }
 
 function sendToDiscord(randomNumber) {
-    const webhookURL = 'https://discord.com/api/webhooks/1216854549579694180/tDEnQF-tW3PXYnOQCyVW84RtGMt4C5Zmd2ZtazCIhba1psWUP8D-OAcvVIdAhBYrEklf'; // Replace this with your webhook URL
+    const webhookURL = 'https://discord.com/api/webhooks/1216854549579694180/tDEnQF-tW3PXYnOQCyVW84RtGMt4C5Zmd2ZtazCIhba1psWUP8D-OAcvVIdAhBYrEklf';
     const data = {
         content: 'Random Number: ' + randomNumber
     };
@@ -18,6 +18,8 @@ function sendToDiscord(randomNumber) {
     .then(response => {
         if (!response.ok) {
             console.error('Error sending message to Discord:', response.statusText);
+        } else {
+            console.log('Message sent to Discord successfully.');
         }
     })
     .catch(error => {
