@@ -23,6 +23,7 @@ body {
 
 .header h1 {
     margin: 0;
+    color: #ffffff;
 }
 
 .content {
@@ -31,6 +32,7 @@ body {
 
 .random-number, .countdown {
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .generate-button {
