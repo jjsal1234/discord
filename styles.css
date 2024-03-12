@@ -62,3 +62,38 @@ body {
     padding: 10px;
     font-size: 16px;
 }
+
+.settings-popup {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+    background-color: #42464d;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.settings-content {
+    padding: 10px;
+}
+
+/* Styles for settings buttons */
+.settings-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #7289da;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+.settings-button:hover {
+    background-color: #677bc4;
+}
