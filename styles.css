@@ -29,7 +29,6 @@ body {
 
 .content {
     padding: 20px;
-    position: relative; /* Ensure content is positioned */
 }
 
 .random-number, .countdown {
@@ -54,13 +53,12 @@ body {
 
 /* Styles for the settings button */
 .settings-button {
-    position: absolute;
-    bottom: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
     background-color: #42464d;
     border: none;
     border-radius: 5px;
-    width: 40px; /* Adjust as needed */
-    height: 40px; /* Adjust as needed */
+    padding: 10px;
     font-size: 16px;
 }
