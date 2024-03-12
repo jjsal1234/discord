@@ -6,6 +6,7 @@
     <title>Random Number Generator</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="settings.css">
 </head>
 <body>
     <div class="container">
@@ -21,15 +22,27 @@
             </div>
             <button onclick="generateNewNumber()" class="generate-button">Generate New Number</button>
         </div>
-        <button onclick="openSettings()" class="settings-button">Settings</button>
+        <button onclick="toggleSettings()" class="settings-button">Settings</button>
     </div>
 
-    <!-- Settings popup -->
     <div class="settings-popup" id="settingsPopup">
-        <div class="settings-content">
-            <button onclick="toggleAppearanceSettings()">Appearance</button>
-            <button onclick="toggleSoundSettings()">Sound</button>
-            <!-- Add more categorized buttons as needed -->
+        <div class="categories">
+            <button onclick="showCategory('appearance')">Appearance</button>
+            <button onclick="showCategory('sound')">Sound</button>
+            <!-- Add more category buttons here as needed -->
+        </div>
+        <div class="category-content">
+            <div id="appearance" class="category">
+                <!-- Content for the Appearance category -->
+                <h2>Appearance Settings</h2>
+                <p>This is where appearance settings go.</p>
+            </div>
+            <div id="sound" class="category" style="display: none;">
+                <!-- Content for the Sound category (initially hidden) -->
+                <h2>Sound Settings</h2>
+                <p>This is where sound settings go.</p>
+            </div>
+            <!-- Add more category content divs here as needed -->
         </div>
     </div>
 
