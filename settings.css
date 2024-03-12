@@ -30,8 +30,16 @@ body {
     padding: 20px;
 }
 
-.setting-item {
+.category {
     margin-bottom: 20px;
+}
+
+.category h2 {
+    margin-top: 0;
+}
+
+.setting-item {
+    margin-bottom: 15px;
 }
 
 label {
@@ -41,7 +49,7 @@ label {
 
 input[type="number"],
 select {
-    width: 100%;
+    width: calc(100% - 10px); /* Adjusted to accommodate borders */
     padding: 10px;
     font-size: 16px;
     border: 1px solid #d3d8de;
