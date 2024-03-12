@@ -1,72 +1,46 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f3f5;
-    color: #000000;
-}
-
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #ffffff;
+.settings-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #202225;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-    background-color: #7289da;
-    color: #ffffff;
     padding: 20px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999; /* Ensure it appears above other elements */
+    display: none; /* Initially hidden */
 }
 
-.header h1 {
-    margin: 0;
+.categories {
+    float: left;
 }
 
-.content {
-    padding: 20px;
-}
-
-.category {
-    margin-bottom: 20px;
-}
-
-.category h2 {
-    margin-top: 0;
-}
-
-.setting-item {
-    margin-bottom: 15px;
-}
-
-label {
+.categories button {
     display: block;
-    margin-bottom: 5px;
-}
-
-input[type="number"],
-select {
-    width: calc(100% - 10px); /* Adjusted to accommodate borders */
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #d3d8de;
-    border-radius: 5px;
-}
-
-.apply-button {
     background-color: #7289da;
     color: #ffffff;
-    padding: 10px 20px;
-    font-size: 16px;
     border: none;
     border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.apply-button:hover {
+.categories button:hover {
     background-color: #677bc4;
+}
+
+.category-content {
+    float: right;
+    width: 70%; /* Adjust as needed */
+    padding-left: 20px;
+}
+
+.category {
+    display: none; /* Initially hidden */
+}
+
+.category.active {
+    display: block; /* Display active category */
 }
