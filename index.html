@@ -21,28 +21,17 @@
                 <p id="countdown">Time until next number: 60 seconds</p>
             </div>
             <button onclick="generateNewNumber()" class="generate-button">Generate New Number</button>
+            <button onclick="toggleSettings()" class="settings-button">Settings</button>
         </div>
-        <button onclick="toggleSettings()" class="settings-button">Settings</button>
     </div>
 
     <div class="settings-popup" id="settingsPopup">
-        <div class="categories">
-            <button onclick="showCategory('appearance')">Appearance</button>
-            <button onclick="showCategory('sound')">Sound</button>
-            <!-- Add more category buttons here as needed -->
-        </div>
-        <div class="category-content">
-            <div id="appearance" class="category">
-                <!-- Content for the Appearance category -->
-                <h2>Appearance Settings</h2>
-                <p>This is where appearance settings go.</p>
-            </div>
-            <div id="sound" class="category" style="display: none;">
-                <!-- Content for the Sound category (initially hidden) -->
-                <h2>Sound Settings</h2>
-                <p>This is where sound settings go.</p>
-            </div>
-            <!-- Add more category content divs here as needed -->
+        <div class="settings-content">
+            <!-- Placeholder for settings content -->
+            <h2>Settings</h2>
+            <p>Setting 1: Value</p>
+            <p>Setting 2: Value</p>
+            <!-- Add more settings here -->
         </div>
     </div>
 
