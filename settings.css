@@ -5,6 +5,8 @@
     transform: translate(-50%, -50%);
     background-color: #202225;
     border-radius: 8px;
+    width: 400px; /* Adjust as needed for square appearance */
+    height: 400px; /* Same as width */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 999; /* Ensure it appears above other elements */
@@ -13,6 +15,7 @@
 
 .categories {
     float: left;
+    height: 100%;
 }
 
 .categories button {
@@ -33,12 +36,17 @@
 
 .category-content {
     float: right;
-    width: 70%; /* Adjust as needed */
+    width: calc(100% - 100px); /* Adjust as needed */
     padding-left: 20px;
+    height: 100%;
 }
 
 .category {
     display: none; /* Initially hidden */
+}
+
+.category.active {
+    display: block; /* Display active category */
 }
 
 .category.active {
