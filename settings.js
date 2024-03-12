@@ -15,3 +15,24 @@ function showCategory(categoryName) {
     var category = document.getElementById(categoryName);
     category.classList.add("active");
 }
+
+function setTheme(theme) {
+    // Apply selected theme
+    if (theme === 'dark') {
+        document.body.classList.remove('light-mode');
+    } else {
+        document.body.classList.add('light-mode');
+    }
+}
+
+function toggleCustomWebhooks() {
+    var customWebhooksCheckbox = document.getElementById('customWebhooks');
+    // Implement logic to toggle custom webhooks
+    if (customWebhooksCheckbox.checked) {
+        // Custom webhooks enabled
+        alert("Custom webhooks enabled!");
+    } else {
+        // Custom webhooks disabled
+        alert("Custom webhooks disabled!");
+    }
+}
