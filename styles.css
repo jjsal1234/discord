@@ -12,6 +12,7 @@ body {
     background-color: #202225;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative; /* Ensure container is positioned */
 }
 
 .header {
@@ -28,6 +29,7 @@ body {
 
 .content {
     padding: 20px;
+    position: relative; /* Ensure content is positioned */
 }
 
 .random-number, .countdown {
@@ -35,7 +37,7 @@ body {
     color: #ffffff;
 }
 
-.generate-button {
+.generate-button, .settings-button {
     background-color: #7289da;
     color: #ffffff;
     padding: 10px 20px;
@@ -46,6 +48,19 @@ body {
     transition: background-color 0.3s;
 }
 
-.generate-button:hover {
+.generate-button:hover, .settings-button:hover {
     background-color: #677bc4;
+}
+
+/* Styles for the settings button */
+.settings-button {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background-color: #42464d;
+    border: none;
+    border-radius: 5px;
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    font-size: 16px;
 }
